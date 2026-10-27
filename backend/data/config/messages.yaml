@@ -1,0 +1,35 @@
+# System-generated messages, per language. Placeholders: {department}, {helpline}.
+no_answer:
+  en: I couldn't find a reliable answer to this in the approved documents, so I won't guess. Please contact {department} directly.
+  hi: मुझे इसका भरोसेमंद उत्तर अनुमोदित दस्तावेज़ों में नहीं मिला, इसलिए मैं अनुमान नहीं लगाऊँगा। कृपया सीधे {department} से संपर्क करें।
+  pa: ਮੈਨੂੰ ਇਸਦਾ ਭਰੋਸੇਯੋਗ ਜਵਾਬ ਪ੍ਰਵਾਨਿਤ ਦਸਤਾਵੇਜ਼ਾਂ ਵਿੱਚ ਨਹੀਂ ਮਿਲਿਆ, ਇਸ ਲਈ ਮੈਂ ਅੰਦਾਜ਼ਾ ਨਹੀਂ ਲਗਾਵਾਂਗਾ। ਕਿਰਪਾ ਕਰਕੇ ਸਿੱਧਾ {department} ਨਾਲ ਸੰਪਰਕ ਕਰੋ।
+
+wellbeing:
+  en: I'm sorry you're going through this. Please talk to someone who can help, starting with {department}. If you are in distress right now, you can call Tele-MANAS on {helpline}. It is free and open 24 hours.
+  hi: मुझे खेद है कि आप इस दौर से गुज़र रहे हैं। कृपया किसी ऐसे व्यक्ति से बात करें जो मदद कर सके, शुरुआत {department} से करें। अगर आप अभी परेशानी में हैं, तो Tele-MANAS को {helpline} पर कॉल कर सकते हैं। यह निःशुल्क है और 24 घंटे उपलब्ध है।
+  pa: ਮੈਨੂੰ ਅਫ਼ਸੋਸ ਹੈ ਕਿ ਤੁਸੀਂ ਇਸ ਦੌਰ ਵਿੱਚੋਂ ਲੰਘ ਰਹੇ ਹੋ। ਕਿਰਪਾ ਕਰਕੇ ਕਿਸੇ ਅਜਿਹੇ ਵਿਅਕਤੀ ਨਾਲ ਗੱਲ ਕਰੋ ਜੋ ਮਦਦ ਕਰ ਸਕੇ, ਸ਼ੁਰੂਆਤ {department} ਤੋਂ ਕਰੋ। ਜੇ ਤੁਸੀਂ ਹੁਣੇ ਪਰੇਸ਼ਾਨੀ ਵਿੱਚ ਹੋ, ਤਾਂ Tele-MANAS ਨੂੰ {helpline} 'ਤੇ ਕਾਲ ਕਰ ਸਕਦੇ ਹੋ। ਇਹ ਮੁਫ਼ਤ ਹੈ ਅਤੇ 24 ਘੰਟੇ ਉਪਲਬਧ ਹੈ।
+
+grievance:
+  en: A complaint like this needs a person to look into it, so I'm not the right channel. Please contact {department}. They can take it forward confidentially.
+  hi: इस तरह की शिकायत को किसी व्यक्ति को देखना चाहिए, इसलिए मैं सही माध्यम नहीं हूँ। कृपया {department} से संपर्क करें। वे इसे गोपनीय तरीके से आगे बढ़ा सकते हैं।
+  pa: ਇਸ ਤਰ੍ਹਾਂ ਦੀ ਸ਼ਿਕਾਇਤ ਨੂੰ ਕਿਸੇ ਵਿਅਕਤੀ ਨੂੰ ਦੇਖਣਾ ਚਾਹੀਦਾ ਹੈ, ਇਸ ਲਈ ਮੈਂ ਸਹੀ ਜ਼ਰੀਆ ਨਹੀਂ ਹਾਂ। ਕਿਰਪਾ ਕਰਕੇ {department} ਨਾਲ ਸੰਪਰਕ ਕਰੋ। ਉਹ ਇਸਨੂੰ ਗੁਪਤ ਤਰੀਕੇ ਨਾਲ ਅੱਗੇ ਵਧਾ ਸਕਦੇ ਹਨ।
+
+policy_exception:
+  en: Exceptions and relaxations are decided case by case, so I can't answer this one. Please send your request to {department}.
+  hi: अपवाद और छूट का निर्णय हर मामले के आधार पर होता है, इसलिए मैं इसका उत्तर नहीं दे सकता। कृपया अपना अनुरोध {department} को भेजें।
+  pa: ਅਪਵਾਦ ਅਤੇ ਛੋਟ ਦਾ ਫ਼ੈਸਲਾ ਹਰ ਮਾਮਲੇ ਦੇ ਆਧਾਰ 'ਤੇ ਹੁੰਦਾ ਹੈ, ਇਸ ਲਈ ਮੈਂ ਇਸਦਾ ਜਵਾਬ ਨਹੀਂ ਦੇ ਸਕਦਾ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਬੇਨਤੀ {department} ਨੂੰ ਭੇਜੋ।
+
+sign_in_required:
+  en: Sign in to get answers based on your own placement record (CGPA, backlogs and offers).
+  hi: अपने प्लेसमेंट रिकॉर्ड (CGPA, बैकलॉग और ऑफ़र) के आधार पर उत्तर पाने के लिए साइन इन करें।
+  pa: ਆਪਣੇ ਪਲੇਸਮੈਂਟ ਰਿਕਾਰਡ (CGPA, ਬੈਕਲੌਗ ਅਤੇ ਆਫ਼ਰ) ਦੇ ਆਧਾਰ 'ਤੇ ਜਵਾਬ ਲੈਣ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ।
+
+extractive_notice:
+  en: The language model is switched off, so these are the most relevant passages from the approved documents.
+  hi: भाषा मॉडल बंद है, इसलिए अनुमोदित दस्तावेज़ों के सबसे प्रासंगिक अंश यहाँ दिए गए हैं।
+  pa: ਭਾਸ਼ਾ ਮਾਡਲ ਬੰਦ ਹੈ, ਇਸ ਲਈ ਪ੍ਰਵਾਨਿਤ ਦਸਤਾਵੇਜ਼ਾਂ ਦੇ ਸਭ ਤੋਂ ਢੁਕਵੇਂ ਹਿੱਸੇ ਇੱਥੇ ਦਿੱਤੇ ਗਏ ਹਨ।
+
+degraded_notice:
+  en: The language model did not respond, so these are the most relevant passages from the approved documents.
+  hi: भाषा मॉडल से उत्तर नहीं मिला, इसलिए अनुमोदित दस्तावेज़ों के सबसे प्रासंगिक अंश यहाँ दिए गए हैं।
+  pa: ਭਾਸ਼ਾ ਮਾਡਲ ਵੱਲੋਂ ਜਵਾਬ ਨਹੀਂ ਮਿਲਿਆ, ਇਸ ਲਈ ਪ੍ਰਵਾਨਿਤ ਦਸਤਾਵੇਜ਼ਾਂ ਦੇ ਸਭ ਤੋਂ ਢੁਕਵੇਂ ਹਿੱਸੇ ਇੱਥੇ ਦਿੱਤੇ ਗਏ ਹਨ।

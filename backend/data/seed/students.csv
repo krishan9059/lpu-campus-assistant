@@ -1,0 +1,13 @@
+reg_no,full_name,program,branch,batch,cgpa,active_backlogs,highest_offer_lpa
+DEMO001,Aarav Sharma,B.Tech,CSE,2027,8.4,0,
+DEMO002,Diya Kaur,B.Tech,CSE,2027,7.1,0,
+DEMO003,Rohan Verma,B.Tech,ECE,2027,6.8,1,
+DEMO004,Simran Gill,B.Tech,IT,2027,9.1,0,
+DEMO005,Karan Malhotra,B.Tech,ME,2027,6.2,0,
+DEMO006,Ananya Singh,B.Tech,AIML,2027,8.0,0,6.5
+DEMO007,Harpreet Singh,B.Tech,EEE,2027,7.6,0,
+DEMO008,Isha Gupta,B.Tech,CE,2027,5.9,0,
+DEMO009,Manav Arora,B.Tech,CSE,2027,6.5,2,
+DEMO010,Tanvi Joshi,B.Tech,IT,2027,7.9,0,
+DEMO011,Vikram Rao,B.Tech,ECE,2027,8.7,0,
+DEMO012,Meera Nair,B.Tech,AIML,2027,8.9,0,12.0

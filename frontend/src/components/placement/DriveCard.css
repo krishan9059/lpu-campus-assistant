@@ -1,0 +1,132 @@
+.drive-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.drive-card-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.drive-card-heading h3 {
+  font-size: var(--text-md);
+}
+
+.drive-role {
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  margin-top: 2px;
+}
+
+.drive-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  margin-top: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.drive-ctc {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.drive-dot {
+  color: var(--color-hairline-strong);
+}
+
+.drive-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.drive-card-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  min-width: 140px;
+}
+
+.drive-deadline {
+  font-size: var(--text-xs);
+  color: var(--color-ink-faint);
+}
+
+.drive-details-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-orange-deep);
+  padding: 0;
+}
+
+.drive-details-toggle svg {
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+.drive-details-toggle svg.is-open {
+  transform: rotate(180deg);
+}
+
+.drive-details {
+  width: 100%;
+  border-top: 1px solid var(--color-hairline);
+  padding-top: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.drive-details ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.drive-details li {
+  display: flex;
+  gap: var(--space-2);
+  align-items: baseline;
+}
+
+.drive-check-code {
+  flex-shrink: 0;
+  width: 90px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.drive-details li.is-passed .drive-check-code {
+  color: var(--color-success);
+}
+.drive-details li.is-failed .drive-check-code {
+  color: var(--color-danger);
+}
+.drive-details li {
+  color: var(--color-ink-muted);
+}
+
+.drive-details-note {
+  margin-top: var(--space-2);
+  color: var(--color-success);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}

@@ -1,0 +1,38 @@
+# Local / demo deployment: two containers, one network. The frontend's nginx proxies
+# /api to the backend by its service name, so no CORS configuration is needed here.
+#
+#   docker compose up --build
+#   open http://localhost:8080
+#
+# Set a real LLM_API_KEY (etc.) in backend/.env for generative answers; without one the
+# assistants still work in extractive mode (they show the matching passages directly).
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: sqlite:////srv/var/campus.db
+      VECTOR_DIR: /srv/var/chroma
+      CORS_ORIGINS: http://localhost:8080
+    volumes:
+      - backend-data:/srv/var
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+
+volumes:
+  backend-data:

@@ -1,0 +1,60 @@
+# Assistant definitions. Names, taglines and suggested questions are shown in the UI;
+# `prompt` refers to a template in app/prompts/.
+assistants:
+  - id: university
+    domain: university
+    prompt: university
+    tools: false
+    name:
+      en: University Help Desk
+      hi: विश्वविद्यालय सहायता केंद्र
+      pa: ਯੂਨੀਵਰਸਿਟੀ ਸਹਾਇਤਾ ਕੇਂਦਰ
+    tagline:
+      en: Academics, exams, fees, hostels and campus services
+      hi: पढ़ाई, परीक्षा, शुल्क, छात्रावास और परिसर की सेवाएँ
+      pa: ਪੜ੍ਹਾਈ, ਪ੍ਰੀਖਿਆ, ਫੀਸ, ਹੋਸਟਲ ਅਤੇ ਕੈਂਪਸ ਸੇਵਾਵਾਂ
+    suggested_questions:
+      en:
+        - What attendance do I need to sit the term-end exam?
+        - How do I apply for re-evaluation of a paper?
+        - What is the last date to pay the second fee instalment?
+        - How many books can an undergraduate borrow from the library?
+      hi:
+        - टर्म-एंड परीक्षा देने के लिए कितनी उपस्थिति ज़रूरी है?
+        - किसी पेपर के पुनर्मूल्यांकन के लिए आवेदन कैसे करें?
+        - फीस की दूसरी किस्त जमा करने की अंतिम तिथि क्या है?
+        - लाइब्रेरी से स्नातक छात्र कितनी किताबें ले सकते हैं?
+      pa:
+        - ਟਰਮ-ਐਂਡ ਪ੍ਰੀਖਿਆ ਦੇਣ ਲਈ ਕਿੰਨੀ ਹਾਜ਼ਰੀ ਲੋੜੀਂਦੀ ਹੈ?
+        - ਕਿਸੇ ਪੇਪਰ ਦੀ ਮੁੜ-ਮੁਲਾਂਕਣ ਲਈ ਅਰਜ਼ੀ ਕਿਵੇਂ ਦੇਈਏ?
+        - ਫੀਸ ਦੀ ਦੂਜੀ ਕਿਸ਼ਤ ਭਰਨ ਦੀ ਆਖਰੀ ਮਿਤੀ ਕੀ ਹੈ?
+        - ਲਾਇਬ੍ਰੇਰੀ ਤੋਂ ਅੰਡਰਗ੍ਰੈਜੂਏਟ ਵਿਦਿਆਰਥੀ ਕਿੰਨੀਆਂ ਕਿਤਾਬਾਂ ਲੈ ਸਕਦੇ ਹਨ?
+
+  - id: placement
+    domain: placement
+    prompt: placement
+    tools: true
+    name:
+      en: Placement Assistant
+      hi: प्लेसमेंट सहायक
+      pa: ਪਲੇਸਮੈਂਟ ਸਹਾਇਕ
+    tagline:
+      en: Placement policy, eligibility, drives and deadlines
+      hi: प्लेसमेंट नीति, पात्रता, ड्राइव और अंतिम तिथियाँ
+      pa: ਪਲੇਸਮੈਂਟ ਨੀਤੀ, ਯੋਗਤਾ, ਡਰਾਈਵ ਅਤੇ ਆਖਰੀ ਮਿਤੀਆਂ
+    suggested_questions:
+      en:
+        - What is the minimum CGPA to register for placements?
+        - Which upcoming drives am I eligible for?
+        - Can I sit another drive after accepting an offer?
+        - What happens if I withdraw from an offer I accepted?
+      hi:
+        - प्लेसमेंट के लिए पंजीकरण करने हेतु न्यूनतम CGPA क्या है?
+        - मैं आने वाली किन ड्राइव के लिए पात्र हूँ?
+        - ऑफ़र स्वीकार करने के बाद क्या मैं दूसरी ड्राइव में बैठ सकता हूँ?
+        - स्वीकार किया हुआ ऑफ़र वापस लेने पर क्या होता है?
+      pa:
+        - ਪਲੇਸਮੈਂਟ ਲਈ ਰਜਿਸਟਰ ਕਰਨ ਵਾਸਤੇ ਘੱਟੋ-ਘੱਟ CGPA ਕੀ ਹੈ?
+        - ਮੈਂ ਆਉਣ ਵਾਲੀਆਂ ਕਿਹੜੀਆਂ ਡਰਾਈਵਾਂ ਲਈ ਯੋਗ ਹਾਂ?
+        - ਆਫ਼ਰ ਸਵੀਕਾਰ ਕਰਨ ਤੋਂ ਬਾਅਦ ਕੀ ਮੈਂ ਦੂਜੀ ਡਰਾਈਵ ਵਿੱਚ ਬੈਠ ਸਕਦਾ ਹਾਂ?
+        - ਸਵੀਕਾਰ ਕੀਤਾ ਆਫ਼ਰ ਵਾਪਸ ਲੈਣ 'ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ?

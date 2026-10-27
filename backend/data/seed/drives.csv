@@ -1,0 +1,11 @@
+company,role_title,ctc_lpa,category,min_cgpa,max_active_backlogs,allowed_branches,mode,location,drive_offset_days,deadline_offset_days,description
+Northwind Technologies,Software Engineer,6.5,regular,6.5,0,CSE|IT|ECE,On campus,Seminar Hall 1,7,4,Online aptitude test followed by two technical interviews.
+Aster Analytics,Data Analyst,7.2,regular,7.0,0,CSE|IT|AIML,On campus,Seminar Hall 2,9,6,SQL and statistics test followed by a case-study interview.
+Quanta Health,Software Engineer,6.0,regular,6.0,1,CSE|IT|ECE|EEE,Virtual,Online,5,2,Coding test and one technical interview.
+Helio Motors,Graduate Engineer Trainee,5.5,regular,6.0,0,ME|EEE|CE,On campus,Auditorium,10,7,Written test and a technical interview on core subjects.
+Vertex Robotics,Robotics Engineer,9.0,dream,7.5,0,ECE|EEE|ME|AIML,On campus,Seminar Hall 1,12,9,Aptitude test and three interviews including a design round.
+Meridian Bank Tech,Technology Analyst,8.4,dream,7.0,1,CSE|IT|ECE,On campus,Seminar Hall 3,14,10,Online test followed by technical and HR interviews.
+BlueOrbit Cloud,Cloud Engineer,12.0,dream,7.5,0,CSE|IT|AIML,On campus,Auditorium,16,12,Coding test and three technical interviews.
+Orchid Software,Backend Developer,10.5,dream,7.0,0,CSE|IT|AIML,Virtual,Online,18,14,Coding contest followed by system-design and HR interviews.
+Kestrel Data,ML Engineer,18.0,super_dream,8.0,0,CSE|IT|AIML,On campus,Auditorium,24,18,Research-style problem round and four interviews.
+Lumen Retail Systems,Associate Engineer,4.8,regular,6.0,2,ALL,On campus,Seminar Hall 2,-3,-6,Completed drive.

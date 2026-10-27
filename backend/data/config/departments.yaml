@@ -1,0 +1,192 @@
+# Contact directory used when the assistant hands a question to a person.
+# SAMPLE CONTACT DETAILS: replace every email and phone number with the real ones.
+departments:
+  - id: student_services
+    name: Student Services Helpdesk
+    description: General questions and anything that does not fit another desk.
+    email: helpdesk@campus.example
+    phone: "+91 00000 10001"
+    hours: Mon-Sat, 9:00 am to 5:00 pm
+    domains: [university]
+    keywords: [help, general, id card, identity card, noc, transport, bus, health centre]
+
+  - id: academic_affairs
+    name: Academic Affairs and Registrar
+    description: Attendance, registration, timetables, transcripts and degree certificates.
+    email: registrar@campus.example
+    phone: "+91 00000 10002"
+    hours: Mon-Sat, 9:00 am to 5:00 pm
+    domains: [university]
+    keywords: [attendance, condonation, registration, timetable, syllabus, credit, transcript, bonafide, degree, provisional, no dues, no-dues, cgpa, grade improvement, उपस्थिति, ਹਾਜ਼ਰੀ]
+
+  - id: examination_cell
+    name: Examination Cell
+    description: Examinations, hall tickets, results and re-evaluation.
+    email: exams@campus.example
+    phone: "+91 00000 10003"
+    hours: Mon-Fri, 10:00 am to 4:00 pm
+    domains: [university]
+    keywords: [exam, result, hall ticket, admit card, re-evaluation, revaluation, re-appear, reappear, supplementary, mst, ete, makeup, unfair means, परीक्षा, परिणाम, ਪ੍ਰੀਖਿਆ, ਨਤੀਜਾ]
+
+  - id: accounts
+    name: Accounts and Fee Section
+    description: Fee payment, receipts, refunds and dues.
+    email: accounts@campus.example
+    phone: "+91 00000 10004"
+    hours: Mon-Fri, 10:00 am to 4:00 pm
+    domains: [university]
+    keywords: [fee, fees, refund, receipt, challan, instalment, installment, late fee, dues, payment, शुल्क, फीस, ਫੀਸ]
+
+  - id: scholarship_cell
+    name: Scholarship Cell
+    description: Merit and government scholarships, renewals and fee waivers.
+    email: scholarships@campus.example
+    phone: "+91 00000 10005"
+    hours: Mon-Fri, 10:00 am to 4:00 pm
+    domains: [university]
+    keywords: [scholarship, financial aid, fee waiver, stipend, छात्रवृत्ति, ਵਜ਼ੀਫ਼ਾ]
+
+  - id: hostel_office
+    name: Hostel and Residential Affairs
+    description: Room allotment, mess, hostel rules and leave-out permissions.
+    email: hostels@campus.example
+    phone: "+91 00000 10006"
+    hours: Daily, 8:00 am to 8:00 pm
+    domains: [university]
+    keywords: [hostel, mess, warden, laundry, room, leave-out, visitor, छात्रावास, हॉस्टल, ਹੋਸਟਲ]
+
+  - id: it_service_desk
+    name: IT Service Desk
+    description: Portal login, passwords, Wi-Fi, e-mail and learning platform issues.
+    email: itdesk@campus.example
+    phone: "+91 00000 10007"
+    hours: Mon-Sat, 9:00 am to 6:00 pm
+    domains: [university]
+    keywords: [wifi, wi-fi, password, portal, login, e-mail, email, lms, network, vpn, software]
+
+  - id: library
+    name: Central Library
+    description: Book issue, fines, digital resources and inter-library loans.
+    email: library@campus.example
+    phone: "+91 00000 10008"
+    hours: Mon-Sat, 8:00 am to 10:00 pm
+    domains: [university]
+    keywords: [library, book, journal, fine, e-resource, पुस्तकालय, ਲਾਇਬ੍ਰੇਰੀ]
+
+  - id: hr
+    name: Human Resources
+    description: Staff and faculty leave, payroll, benefits and service records.
+    email: hr@campus.example
+    phone: "+91 00000 10009"
+    hours: Mon-Fri, 9:30 am to 5:30 pm
+    domains: [university]
+    keywords: [leave, payroll, salary, payslip, appraisal, increment, provident fund, casual leave, sabbatical]
+
+  - id: student_welfare
+    name: Student Welfare and Grievance Cell
+    description: Complaints, grievances, anti-ragging and the Internal Complaints Committee.
+    email: welfare@campus.example
+    phone: "+91 00000 10010"
+    hours: Mon-Sat, 9:00 am to 5:00 pm
+    domains: [university, placement]
+    keywords: [grievance, complaint, ragging, harassment]
+
+  - id: counselling
+    name: Student Counselling Centre
+    description: Free and confidential counselling for students.
+    email: counselling@campus.example
+    phone: "+91 00000 10011"
+    hours: Mon-Sat, 9:00 am to 6:00 pm
+    domains: [university, placement]
+    keywords: [counselling, counseling, stress, wellbeing]
+
+  - id: tele_manas
+    name: Tele-MANAS (national helpline)
+    description: Free 24-hour mental health support run by the Government of India.
+    email: ""
+    phone: 14416 or 1800-891-4416
+    hours: 24 hours, every day
+    url: https://telemanas.mohfw.gov.in/home
+    domains: []
+    keywords: []
+
+  - id: placement_cell
+    name: Placement Cell
+    description: Placement policy, drives, registrations, offers and internships.
+    email: placements@campus.example
+    phone: "+91 00000 20001"
+    hours: Mon-Sat, 9:00 am to 5:00 pm
+    domains: [placement]
+    keywords: [placement, drive, company, offer, resume, internship, ppo, recruitment, debar, प्लेसमेंट, ਪਲੇਸਮੈਂਟ]
+
+default_department:
+  university: student_services
+  placement: placement_cell
+
+# Topics a chatbot should not handle alone. A match skips retrieval and hands the person
+# straight to the right desk.
+sensitive:
+  - id: wellbeing
+    reason: sensitive_topic
+    message_key: wellbeing
+    department: counselling
+    additional: [tele_manas]
+    domains: [university, placement]
+    keywords:
+      - suicide
+      - suicidal
+      - kill myself
+      - end my life
+      - end it all
+      - self harm
+      - self-harm
+      - hurt myself
+      - want to die
+      - depressed
+      - depression
+      - panic attack
+      - आत्महत्या
+      - मरना चाहता
+      - मरना चाहती
+      - ਖੁਦਕੁਸ਼ੀ
+      - ਮਰਨਾ ਚਾਹੁੰਦਾ
+      - ਮਰਨਾ ਚਾਹੁੰਦੀ
+
+  - id: grievance
+    reason: sensitive_topic
+    message_key: grievance
+    department: student_welfare
+    domains: [university, placement]
+    keywords:
+      - ragging
+      - ragged
+      - harass
+      - molest
+      - sexual
+      - assault
+      - abuse
+      - bully
+      - blackmail
+      - stalk
+      - discriminat
+      - रैगिंग
+      - उत्पीड़न
+      - छेड़छाड़
+      - ਰੈਗਿੰਗ
+      - ਛੇੜਛਾੜ
+
+  - id: policy_exception
+    reason: policy_exception
+    message_key: policy_exception
+    department: placement_cell
+    domains: [placement]
+    keywords:
+      - relaxation
+      - relax the
+      - waiver
+      - waive
+      - make an exception
+      - exception for
+      - special permission
+      - special case
+      - appeal against

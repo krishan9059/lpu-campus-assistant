@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campus-assistant"
+version = "1.0.0"
+description = "Retrieval-augmented assistants for university services and placement queries."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sqlalchemy>=2.0",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.7",
+    "pyjwt>=2.8",
+    "bcrypt>=4.1",
+    "httpx>=0.27",
+    "chromadb>=1.0,<2",
+    "pymupdf>=1.24",
+    "pyyaml>=6.0",
+    "numpy>=1.26",
+    "python-multipart>=0.0.9",
+    "tzdata; sys_platform == 'win32'",
+]
+
+[project.optional-dependencies]
+# Multilingual embedding model. Kept optional so the test suite and CI stay light.
+ml = ["sentence-transformers>=3.0"]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.setuptools.package-data]
+app = ["prompts/*.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["var"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "PT", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]  # Devanagari/Gurmukhi text is intentional
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]
+filterwarnings = ["ignore::DeprecationWarning"]
